@@ -55,6 +55,14 @@ If you need more than just the title and content, you can change the content ins
 
 You can name OPTION_NAME to whatever you want/need.
 
+#### Creating the JSON
+
+After setting it up to what you need/want, you just need to open the terminal and run the following command:
+
+`npm run json`
+
+The reddit.json file will be created/updated inside the root folder.
+
 The API_OPTIONS are as follows:
 
 ###### Retrieved from [Reddit public .json API](https://www.reddit.com/r/all/top/.json?t=all)
