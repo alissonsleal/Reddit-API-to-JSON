@@ -186,7 +186,7 @@ And we are currently using the [Node-fetch](https://www.npmjs.com/package/node-f
 
 MIT License
 
-Copyright (c) [2020][alisson leal]
+Copyright (c) 2020 Alisson Leal
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
