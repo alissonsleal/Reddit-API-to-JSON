@@ -1,3 +1,14 @@
+<p align="center">
+    <a href="https://github.com/Alissonsleal/Reddit-API-to-JSON/issues" alt="Issues">
+        <img src="https://img.shields.io/github/issues/Alissonsleal/Reddit-API-to-JSON" /></a>
+    <a href="https://github.com/Alissonsleal/Reddit-API-to-JSON/network/members" alt="Forks">
+        <img src="https://img.shields.io/github/forks/Alissonsleal/Reddit-API-to-JSON" /></a>
+    <a href="https://github.com/Alissonsleal/Reddit-API-to-JSON/stargazers" alt="Stars">
+        <img src="https://img.shields.io/github/stars/Alissonsleal/Reddit-API-to-JSON" /></a>
+    <a href="https://github.com/Alissonsleal/Reddit-API-to-JSON/blob/master/LICENSE" alt="License">
+        <img src="https://img.shields.io/github/license/Alissonsleal/Reddit-API-to-JSON" /></a>
+</p>
+
 # Reddit API to JSON
 
 ### Table Of Contents
@@ -12,7 +23,7 @@
 
 ## Description
 
-Make a simple JSON file from the Reddit API without any OAuth parameters. Limited to 25 Reddit Posts at a time.
+Make a simple JSON file from the Reddit API without the need of any OAuth parameter. It is limited to 25 Reddit Posts at a time.
 
 [Back To The Top](#Reddit-API-to-JSON)
 
