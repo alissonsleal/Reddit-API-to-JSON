@@ -1,19 +1,19 @@
 {
   "name": "redditjson",
   "version": "1.0.0",
-  "description": "",
+  "description": "Make a simple JSON file from the Reddit API without any oauth parameters. Limited to 25 Reddit Posts.",
   "main": "reddit.js",
   "scripts": {
-    "dev": "nodemon reddit.js"
+    "json": "node reddit.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "reddit",
+    "reddit-api",
+    "reddit-json"
+  ],
+  "author": "Alisson Leal",
+  "license": "",
   "dependencies": {
-    "express": "^4.17.1",
     "node-fetch": "^2.6.0"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.4"
   }
 }
