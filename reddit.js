@@ -22,9 +22,9 @@ let appendData = (result) => {
     // you can find the options inside data in: https://www.reddit.com/r/all/top/.json?t=all
 
     apiContent.push(
-      `{"title": "${cleaner(fullContent.title)}", "body": "${cleaner(
-        fullContent.selftext
-      )}"}`
+      `
+  {"title": "${cleaner(fullContent.title)}",
+  "body": "${cleaner(fullContent.selftext)}"}`
     );
   }
 
