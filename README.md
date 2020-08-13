@@ -1,4 +1,4 @@
-#Reddit API to JSON
+# Reddit API to JSON
 
 ### Table Of Contents
 
