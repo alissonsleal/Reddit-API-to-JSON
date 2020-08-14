@@ -69,7 +69,7 @@ apiContent.push(
   {
     "title": "${cleaner(fullContent.title)}",
     "body": "${cleaner(fullContent.selftext)}",
-    "OPTION_NAME": "${cleaner(API_OPTION)}
+    "OPTION_NAME": "${cleaner(fullContent.API_OPTION)}
   }`
 );
 ```
