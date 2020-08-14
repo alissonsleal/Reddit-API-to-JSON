@@ -1,12 +1,9 @@
 <p align="center">
-    <a href="https://github.com/Alissonsleal/Reddit-API-to-JSON/issues" alt="Issues">
-        <img src="https://img.shields.io/github/issues/Alissonsleal/Reddit-API-to-JSON" /></a>
-    <a href="https://github.com/Alissonsleal/Reddit-API-to-JSON/network/members" alt="Forks">
-        <img src="https://img.shields.io/github/forks/Alissonsleal/Reddit-API-to-JSON" /></a>
-    <a href="https://github.com/Alissonsleal/Reddit-API-to-JSON/stargazers" alt="Stars">
-        <img src="https://img.shields.io/github/stars/Alissonsleal/Reddit-API-to-JSON" /></a>
-    <a href="https://github.com/Alissonsleal/Reddit-API-to-JSON/blob/master/LICENSE" alt="License">
-        <img src="https://img.shields.io/github/license/Alissonsleal/Reddit-API-to-JSON" /></a>
+    <a href="https://github.com/Alissonsleal/Reddit-API-to-JSON/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/Alissonsleal/Reddit-API-to-JSON?color=sucess&style=flat-square"></a>
+    <a href="https://github.com/Alissonsleal/Reddit-API-to-JSON/network"><img alt="GitHub forks" src="https://img.shields.io/github/forks/Alissonsleal/Reddit-API-to-JSON?color=sucess&style=flat-square"></a>
+    <a href="https://github.com/Alissonsleal/Reddit-API-to-JSON/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/Alissonsleal/Reddit-API-to-JSON?color=sucess&style=flat-square"></a>
+    <a href="https://github.com/Alissonsleal/Reddit-API-to-JSON/blob/master/LICENSE"><img alt="GitHub license" src="https://img.shields.io/github/license/Alissonsleal/Reddit-API-to-JSON?color=sucess&style=flat-square"></a>
+    <a href="https://github.com/Alissonsleal/"><img alt="Alisson Leal GitHub Profile" src="https://img.shields.io/badge/made%20by-Alisson%20Leal-sucess?style=flat-square&logo=appveyor"></a>
 </p>
 
 # Reddit API to JSON
@@ -31,8 +28,9 @@ Make a simple JSON file from the Reddit API without the need of any OAuth parame
 
 #### Tecnologies
 
-- Javascript
+- Vanilla Javascript
 - Node.js
+- Node-fetch
 
 [Back To The Top](#Reddit-API-to-JSON)
 
@@ -45,6 +43,14 @@ Make a simple JSON file from the Reddit API without the need of any OAuth parame
 You need Node.js for this.
 Open your terminal and run "npm install" or "yarn install" to install all dependencies (we only need node-fetch).
 
+#### Creating the JSON
+
+After setting it up to what you need/want, you just need to open the terminal and run the following command:
+
+`npm run json`
+
+The reddit.json file will be created/updated inside the root folder.
+
 #### API Reference
 
 To get a simple JSON with only the title and content of the post, you just need to change the following variables:
@@ -55,24 +61,20 @@ To get a simple JSON with only the title and content of the post, you just need 
     const age = "all"; // options are(hour, day, week, month, year, all)
 ```
 
-If you need more than just the title and content, you can change the content inside apiContent.push() as follows:
+If you need more than just the title and content of the post, you can change the content inside apiContent.push() as follows:
 
 ```
     apiContent.push(
-      `{"title": "${cleaner(fullContent.title)}",
-      "body": "${cleaner(fullContent.selftext)}",
-      "OPTION_NAME": "${cleaner(API_OPTION)}"`
+      `
+  {
+    "title": "${cleaner(fullContent.title)}",
+    "body": "${cleaner(fullContent.selftext)}",
+    "OPTION_NAME": "${cleaner(API_OPTION)}
+  }`
+    );
 ```
 
 You can name OPTION_NAME to whatever you want/need.
-
-#### Creating the JSON
-
-After setting it up to what you need/want, you just need to open the terminal and run the following command:
-
-`npm run json`
-
-The reddit.json file will be created/updated inside the root folder.
 
 The API_OPTIONS are as follows:
 
