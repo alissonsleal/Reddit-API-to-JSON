@@ -55,23 +55,23 @@ The reddit.json file will be created/updated inside the root folder.
 
 To get a simple JSON with only the title and content of the post, you just need to change the following variables:
 
-```
-    const subreddit = "Jokes"; // subreddit name goes here
-    const filter = "top"; // filter options are(new, hot, top, rising)
-    const age = "all"; // options are(hour, day, week, month, year, all)
+```js
+const subreddit = "Jokes"; // subreddit name goes here
+const filter = "top"; // filter options are(new, hot, top, rising)
+const age = "all"; // options are(hour, day, week, month, year, all)
 ```
 
 If you need more than just the title and content of the post, you can change the content inside apiContent.push() as follows:
 
-```
-    apiContent.push(
-      `
+```js
+apiContent.push(
+  `
   {
     "title": "${cleaner(fullContent.title)}",
     "body": "${cleaner(fullContent.selftext)}",
     "OPTION_NAME": "${cleaner(API_OPTION)}
   }`
-    );
+);
 ```
 
 You can name OPTION_NAME to whatever you want/need.
