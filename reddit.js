@@ -23,8 +23,10 @@ let appendData = (result) => {
 
     apiContent.push(
       `
-  {"title": "${cleaner(fullContent.title)}",
-  "body": "${cleaner(fullContent.selftext)}"}`
+  {
+    "title": "${cleaner(fullContent.title)}",
+    "body": "${cleaner(fullContent.selftext)}"
+  }`
     );
   }
 
